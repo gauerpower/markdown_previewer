@@ -1,0 +1,3 @@
+const startingText = "# Examples of what you can do with this markdown previewer: \n # Heading \n## Subheading \n### Sub-subheading \n **bold text** \n _italic text_ \n **_bold and italic text_** \n ~~Strikethrough~~ \n [Links](https://www.linkedin.com/in/gauerpower/)\n- Lists: \n- With bullets\n   - With indentations\n      - Etc.\n1. Numbered lists\n1. Series of 1's will be converted to auto-numbering\n1. Images can also be embedded:\n![freeCodeCamp Logo](https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33be7eedf8e1f31aabcec_BwENfmI0CU5dZGYlSyo142mpfG08-rYgTS-Qm47uMUXN6JXtmdZvtzVzTooUQdXTWmTD8uzF9N6XQJA2vUIMi53tunFyVtvOBJTNfOjHit2P_JkTmFzFsK7ep6Vb9781XZnRAryH.png)"
+
+export default startingText;

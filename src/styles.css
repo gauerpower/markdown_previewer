@@ -1,0 +1,68 @@
+:root {
+    --body-color: #161748;
+    --text-area-color: #39a0ca;
+    --heading-color: #00a0a0;
+}
+
+
+body {
+    text-align: center;
+    background-color: var(--body-color);
+}
+
+.big-heading {
+    font-size: 3rem;
+    color: var(--heading-color);
+    text-shadow: 2px 2px black;
+}
+
+.input-area {
+    width: 50%;
+    margin: auto;
+    padding: 0;
+}
+
+.input-heading, .output-heading {
+    background-color: var(--heading-color)
+}
+
+.input-text, .output-text, .output-area {
+    background-color: var(--text-area-color)
+}
+
+.input-heading {
+    width: 99%;
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px 2px;
+}
+
+.input-text {
+    width: 99%;
+    margin: 0;
+    border: none;
+}
+
+.output-area {
+    border: 1px solid black;
+    width: 75%;
+    margin: 25px auto;
+    min-height: 500px;
+}
+
+.output-heading {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.output-text {
+    text-align: left;
+    padding: 0 30px;
+}
+
+.output-text img {
+    max-width: 90%;
+    margin: 20px auto;
+}

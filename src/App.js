@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+// Progress: Functionality is all pretty much there with the NPM marked.js package.
+// Need to style and break into components.
+import React, {useState} from 'react';
+import { marked } from 'marked';
+import "./styles.css";
+import startingText from './startingText';
+import InputArea from './components/InputArea';
+import OutputArea from './components/OutputArea';
 
-function App() {
-  return (
+
+function App(){
+
+  const [markdown, setMarkdown] = useState(startingText);
+  const outputText = marked(markdown);
+
+  function changeHandler(event) {
+    setMarkdown(event.target.value)
+  }
+
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="big-heading">Markdown Previewer</h1>
+      <InputArea markdown={markdown} changeHandler={changeHandler}/>
+      <OutputArea outputText={outputText}/>
+      {/* <div className="output-area">
+        <h2 className="output-heading">Output:</h2>
+        <div className="output-text" dangerouslySetInnerHTML={{ __html: marked(markdown) }}></div>
+      </div> */}
     </div>
   );
 }
